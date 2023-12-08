@@ -65,7 +65,7 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CA_CLIENT_SECRET }}
         BUSINESSID: ${{ secrets.BUSINESS_GROUP_ID }}
       run: |
-        mvn clean deploy -DmuleDeploy -Denvironment=prod -Dapp-name=hello-tony812 \
+        mvn clean deploy -DmuleDeploy -Denvironment=test -Dapp-name=hello-tony812test \
         -Dca.clientId=${{ secrets.CA_CLIENT_ID }} -Dca.clientSecret=${{ secrets.CA_CLIENT_SECRET }} \
         -DbusinessGroupId=${{ secrets.BUSINESS_GROUP_ID }} -Dcicd.welcome.message="Hello to github, mule and cloudhub 1 " -Duser="tonygair4learn"
   
